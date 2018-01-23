@@ -1,0 +1,33 @@
+---
+title: "FARS"
+author: "Jay Borthen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The FARS package visualizes vehicle accidents using data provided by the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS). Summaries for each of the five functions provided with the package are presented below.
+
+
+## fars_read()
+The fars_read function takes as an input the filename of a *.csv file.  It reads in the file data as a data frame.
+
+
+## make_filename()
+The make_filename function accepts as input an integer or a string that represents a specified year.  It then prints the filename corresponding to the year.
+
+
+## fars_summarize_years()
+The fars_summarize_years function takes as input a year in the form of an integer or string. It then summarizes accident data from the specified year.
+
+
+## fars_read_years()
+The fars_read_years function takes as input an integer or a string that represents a specified year.  It then reads in the data from the *.csv file corresponding to the given year and returns each observation's month and year.
+
+
+## fars_map_state()
+The fars_map_state function accepts as input a state number and a year as either integers or strings.  It then uses the values to plot a map of the observations for the specified state and year.
+
