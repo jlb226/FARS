@@ -1,4 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 
-imports(dplyr)
-imports(tidyr)
+import(dplyr)
+import(tidyr)
