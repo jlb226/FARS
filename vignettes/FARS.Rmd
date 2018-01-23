@@ -4,9 +4,9 @@ Author: "Jay Borthen"
 Date: "01/23/2018"
 Output: rmarkdown::html_vignette
 Vignette: >
-  \VignetteIndexEntry{FARS}
-  \VignetteEngine{knitr::rmarkdown}
-  \VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{FARS}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 The FARS package visualizes vehicle accidents using data provided by the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS). Summaries for each of the five functions provided with the package are presented below.
