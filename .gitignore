@@ -3,3 +3,4 @@ inst/doc
 .Rproj.user
 .Rhistory
 .travis.yml
+data/
