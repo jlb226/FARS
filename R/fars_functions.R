@@ -1,4 +1,5 @@
 
+
 #' Read in NHTSA FARS data
 #'
 #' The fars_read function takes as an input the filename of a *.csv file.  It reads in the file
@@ -83,6 +84,8 @@ make_filename <- function(year) {
 #' @export
 #'
 fars_read_years <- function(years) {
+  year <- NULL
+  MONTH <- NULL
   lapply(years, function(year) {
     file <- make_filename(year)
     tryCatch({
@@ -120,6 +123,9 @@ fars_read_years <- function(years) {
 #' @export
 #'
 fars_summarize_years <- function(years) {
+  MONTH <- NULL
+  n <- NULL
+  year <- NULL
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
     dplyr::group_by(year, MONTH) %>%
@@ -154,6 +160,7 @@ fars_summarize_years <- function(years) {
 #' @export
 #'
 fars_map_state <- function(state.num, year) {
+  STATE <- NULL
   filename <- make_filename(year)
   data <- fars_read(filename)
   state.num <- as.integer(state.num)
