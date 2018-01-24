@@ -1,12 +1,11 @@
 Package: FARS
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Summarize FARS data from NHTSA
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jay Borthen
+Maintainer: The package maintainer <jayborthen@gmail.com>
+Description: Summarizes data provided by the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS)
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,

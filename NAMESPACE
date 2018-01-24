@@ -1,4 +1,7 @@
 exportPattern("^[[:alpha:]]+")
 
-import(dplyr)
-import(tidyr)
+import("dplyr")
+import("maps")
+import("readr")
+import("tidyr")
+import("testthat")
