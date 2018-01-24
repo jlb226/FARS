@@ -22,7 +22,9 @@ The fars_read_years function returns an error message for invalid years.
 }
 \examples{
 \dontrun{
-  fars_read_years(2015)
+if (requireNamespace("dplyr", quietly = TRUE)){
+    fars_read_years(2015)
+  }
 }
 
 }

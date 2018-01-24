@@ -23,7 +23,9 @@ present within the file is invalid.
 }
 \examples{
 \dontrun{
-  fars_read("accident_2015.csv.bz2")
+if (requireNamespace("dplyr", quietly = TRUE)){
+    fars_read("accident_2015.csv.bz2")
+  }
 }
 
 }

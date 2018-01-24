@@ -21,7 +21,11 @@ The fars_summarize_years function returns an error message if years is invalid.
 }
 \examples{
 \dontrun{
-  fars_summarize_years(2015)
+if (requireNamespace("dplyr", quietly = TRUE)){
+  if (requireNamespace("tidyr", quietly = TRUE)){
+      fars_summarize_years(2015)
+    }
+  }
 }
 
 }

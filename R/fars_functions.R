@@ -18,7 +18,9 @@
 #'
 #' @examples
 #' \dontrun{
-#'   fars_read("accident_2015.csv.bz2")
+#' if (requireNamespace("dplyr", quietly = TRUE)){
+#'     fars_read("accident_2015.csv.bz2")
+#'   }
 #' }
 #'
 #' @export
@@ -74,11 +76,12 @@ make_filename <- function(year) {
 #' @details The fars_read_years function returns an error message for invalid years.
 #'
 #' @importFrom dplyr %>% mutate select
-#' @importFrom stats setNames
 #'
 #' @examples
 #' \dontrun{
-#'   fars_read_years(2015)
+#' if (requireNamespace("dplyr", quietly = TRUE)){
+#'     fars_read_years(2015)
+#'   }
 #' }
 #'
 #' @export
@@ -117,7 +120,11 @@ fars_read_years <- function(years) {
 #'
 #' @examples
 #' \dontrun{
-#'   fars_summarize_years(2015)
+#' if (requireNamespace("dplyr", quietly = TRUE)){
+#'   if (requireNamespace("tidyr", quietly = TRUE)){
+#'       fars_summarize_years(2015)
+#'     }
+#'   }
 #' }
 #'
 #' @export
@@ -154,7 +161,9 @@ fars_summarize_years <- function(years) {
 #'
 #' @examples
 #' \dontrun{
-#'   fars_map_state(3, 2015)
+#' if (requireNamespace("maps", quietly = TRUE)){
+#'     fars_map_state(3, 2015)
+#'   }
 #' }
 #'
 #' @export

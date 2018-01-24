@@ -24,7 +24,9 @@ and if the data is not present
 }
 \examples{
 \dontrun{
-  fars_map_state(3, 2015)
+if (requireNamespace("maps", quietly = TRUE)){
+    fars_map_state(3, 2015)
+  }
 }
 
 }
